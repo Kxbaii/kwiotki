@@ -1,0 +1,231 @@
+@import url('https://fonts.cdnfonts.com/css/made-tommy-soft-outline');
+
+
+:root{
+    --text-color: #ececec;
+    --text-color2:rgb(211, 211, 211);
+    --text-color3: #0a1d2c;
+    --bg-color: #020208;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MADE Tommy Soft', sans-serif;
+    color: var(--text-color);
+   /* user-select: none;
+    -webkit-user-drag: none; */
+}
+
+body{
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    flex-direction: row;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    position: absolute;
+}
+
+.register, .login{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register{
+    border-left: solid 1px var(--text-color2);
+    justify-content: space-between;
+    height: 90%;
+}
+.login{
+    justify-content: space-between;
+    height: 90%;
+}
+#logiin{
+    margin-top: 18vh;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.formInput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+label{
+    margin: 1vh;
+    text-align: center;
+    font-weight: 300;
+}
+
+input{
+    background:none;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    width: 100%;
+    transition: padding 0.4s, margin 0.4s, transform 0.4s;
+    padding: 1vh;
+    font-size: 16px;
+}
+
+input:focus{
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    width: 100%;
+    padding: 1.5vh;
+    transform: scale(1.05); 
+}
+.registerText{
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+.registerText span{
+    color: var(--text-color2);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.loginText{
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+.loginText span{
+    color: var(--text-color2);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+input[type="submit"]{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 1vh 2vh;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s, opacity 0.4s;
+    width: 60%;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--text-color2);
+    opacity: 0.9 ;
+}
+a{
+    width: 4vh;
+    position: absolute;
+    margin-left: 3vh;
+    margin-top: 0;
+    top: 4vh;
+    left: 1vh;
+}
+img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1050px){
+    .main{
+        flex-direction: column;
+        height: fit-content;
+    }
+    body{
+        align-items: center;
+        margin: 20vh;
+    }
+    .register, .login{
+        width: 99%;
+        height: 60%;
+        border: none;
+        margin-top: 4vh;
+    }
+    #logiin{
+        margin: 2vh;
+        margin-bottom: 5vh;
+    }
+    .loginText, .registerText{
+        font-size: 1.8rem;
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+    .registerText span, .loginText span{
+        font-size: 1.3rem;
+    }
+    input{
+        width: 100%;
+    }
+    .formInput{
+        width: 80%;
+    }
+    a{
+        padding: 0vh;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    input[type="submit"]{
+        width: 80%;
+    }
+    input{
+        width: 100%;
+    }
+    .register, .login{
+        width: 99%;
+        height: 70%;
+        border: none;
+        margin-top: 4vh;
+    }
+    #logiin{
+        margin: 2vh;
+        margin-bottom: 5vh;
+    }
+    label, input{
+        font-size: 3vw;
+    }
+    .registerText, .loginText{
+        font-size: 5vw;
+    }
+    .registerText span, .loginText span{
+        font-size: 4vw;
+    }
+    body{
+        margin: 18vh 0vh;
+        justify-content: center;
+    }
+    .login{
+        margin-top: 6vh;
+    }
+    a{
+        width: 4vh;
+    }
+}
+

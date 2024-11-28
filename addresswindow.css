@@ -1,0 +1,160 @@
+@import url('https://fonts.cdnfonts.com/css/made-tommy-soft-outline');
+:root{
+    --text-color: #ececec;
+    --text-color2:rgb(211, 211, 211);
+    --text-color3: #0a1d2c;
+    --bg-color: #020208;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MADE Tommy Soft', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+}
+.address{
+    background-color: white;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 2vh;
+}
+.close{
+    all: unset;
+    font-size: 20px;
+    cursor: pointer;
+    background:none;
+    height: 40%;
+    display: flex;
+    filter: invert();
+}
+.close img{
+    display: flex;
+    height: 100%;
+    filter: invert();
+}
+.addresswindow{
+    width: 20vw;
+    height: 70vh;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+}
+.adresWindowBG{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-color: rgba(73, 73, 73, 0.719);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    z-index: 50;
+    align-items: center;
+}
+
+
+
+.addressmain{
+    background:none;
+    height: 100%;
+}
+
+.adresy{
+    background: none;
+    margin: none;
+    width: 100%;
+    padding: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.adresy .adres{
+    margin: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin: 1vh;
+    background: none;
+    flex-direction: row;
+    border: 2px solid var(--bg-color);
+    height: 20vh;
+}
+.adresy > .adres > .adresFORM{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: none;
+}
+.adresy > .adres > .adresFORM > label{
+    height: 70%;
+    width: 100%;
+}
+
+.dane{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.adres > .backButton{
+    all: unset;
+    background: var(--text-color);
+    color: var(--text-color3);
+    padding: 0.5vh 2vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.adres h1{
+    font-size: 2.5vh;
+    font-weight: 400;
+    color: var(--bg-color);
+}
+
+.adres p{
+    font-size: 2vh;
+    font-weight: 300;
+    color: var(--bg-color);
+}
+.adres.selected {
+    border-color: #4CAF50;
+    background-color: rgb(236, 236, 236);
+    transition: all 0.3s;
+}
+
+input[type="radio"] {
+    margin: 0;
+    appearance: none;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    border: var(--bg-color) solid 2px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
